@@ -1,11 +1,24 @@
 from django.contrib import admin
-from MesaServicios.models import oficinaAmbiente,user
-
+#from MesaServicios.models import oficinaAmbiente,User
+from MesaServicios.models import *
 
 # Register your models here.
-admin.site.register(oficinaAmbiente)
+admin.site.register(OficinaAmbiente)
 
-admin.site.register(user)
+admin.site.register(User) 
+
+admin.site.register(Solicitud) 
+
+admin.site.register(Casos) 
+
+admin.site.register(TipoProcedimiento) 
+
+admin.site.register(SolucionCaso) 
+
+admin.site.register(SolucionCasoTipoProcedimientos) 
+
+
+
 
 
 

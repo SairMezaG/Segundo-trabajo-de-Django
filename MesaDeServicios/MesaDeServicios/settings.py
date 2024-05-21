@@ -131,7 +131,9 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 #Lo nuevo
 
-AUTH_USER_MODEL = "MesaServicios.user"
+
+AUTH_USER_MODEL = 'appMesaDeServicios.User'
+
 
 STATIC_URL = os.path.join(BASE_DIR, '/static/')
 

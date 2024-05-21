@@ -1,6 +1,6 @@
 from django.contrib import admin
 #from MesaServicios.models import oficinaAmbiente,User
-from MesaServicios.models import *
+from appMesaDeServicios.models import *
 
 # Register your models here.
 admin.site.register(OficinaAmbiente)

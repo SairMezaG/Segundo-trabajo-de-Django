@@ -76,6 +76,7 @@ class Casos(models.Model):
     casSolicitud = models.ForeignKey(Solicitud, on_delete=models.PROTECT, db_comment = "Hace referencia a la solicitud que genera")
     casCodigo = models.CharField(max_length=10, unique=True, db_comment = "Codigo único del caso")
     casUsuario =  models.ForeignKey(User, on_delete= models.PROTECT, db_comment="Empleado de soperte tecnico asignado al caso")
+    casEstado = models.CharField(max_length=15, choices=estadosCaso, db_comment="",default="solicitada")
     fechaHoraActualizacion = models.DateTimeField(auto_now= True, db_comment = "Fecha y Hora última actualizacion")
     
     def __str__(self) -> str:

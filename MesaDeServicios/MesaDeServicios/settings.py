@@ -57,7 +57,7 @@ ROOT_URLCONF = 'MesaDeServicios.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['./MesaServicios/templates'],
+        'DIRS': ['./appMesaDeServicios/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

@@ -10,34 +10,30 @@
 
 <div class="tab-content">
   <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="tab-login">
-    <form>
+    <form  method="POST" action="login/">
+      {% csrf_token %}
       
-      <p class="text-center">REGISTRO DE USUARIOS</p>
+      <p class="text-center">INGRESO DE USUARIOS</p>
 
-      <!-- Email input -->
+      
       <div data-mdb-input-init class="form-outline mb-4">
-        <input type="email" id="loginName" class="form-control" />
-        <label class="form-label" for="loginName">Correo Electrónico</label>
+        <input type="text" id="loginName" class="form-control"  name="txtUsuario"/>
+        <label class="form-label" for="loginName">Usuario</label>
       </div>
 
-      <!-- Password input -->
+     
       <div data-mdb-input-init class="form-outline mb-4">
-        <input type="password" id="loginPassword" class="form-control" />
+        <input type="password" id="loginPassword" class="form-control" name="txtPassword"/>
         <label class="form-label" for="loginPassword">Contraseña</label>
       </div>
 
-    
-      
-
-      <!-- Submit button -->
       <button type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-block mb-4">Sign in</button>
-
-      <!-- Register buttons -->
+      
     </form> 
     
   </div>
 </div>
-<!-- Pills content -->
+
 {% endblock %}
 
 
